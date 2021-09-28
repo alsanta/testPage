@@ -1,0 +1,107 @@
+/* General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px red dotted; */
+}
+.App {
+  text-align: center;
+}
+.nav{
+  position: absolute;
+  bottom: 0px;
+  background-color: teal;
+  width: 100%;
+  height: 50px;
+  border-top: 2px black solid;
+}
+
+/* Dash */
+.empty{
+  height: 150px;
+}
+.hero{
+  margin: 0 auto;
+  width: 90%;
+  background-color: grey;
+  box-shadow: 2px 2px 15px;
+  display: flex;
+  overflow: hidden;
+  /* transform: skew(-20deg); */
+}
+.links{
+  position: relative;
+  width: 33.4%;
+  display: flex;
+  border: 1px black solid;
+}
+.linkPic{
+  opacity: 1.0;
+  width: 100%;
+}
+.linkPic:hover {
+  opacity: .3;
+  transition: .55s ease-in-out;
+}
+.linkText{
+position: absolute;
+top: 50%;
+left: 50%;
+height: 100%;
+width: 100%;
+text-align: center;
+transform: translate(-50%, -50%);
+opacity: 0;
+color:black;
+text-decoration: none;
+}
+.linkText:hover{
+  opacity: 1;
+  transition: .55s ease-in-out;
+}
+
+/* Project page*/
+.projectCustom{
+  border: 1px black solid;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: grey;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 15px;
+}
+
+/* About me Page */
+.main{
+  margin: 0 auto;
+  width: 80%;
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+}
+.boxSizing{
+  height: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Util */
+.wF{
+  color:  white;
+}
+.charGreyBg{
+  background-color: #36454F;
+}
+.goldBg{
+  background-color: #E1AD01;
+}
+.walnutBg{
+  background-color: #773f1a;
+}
