@@ -2,6 +2,7 @@ import './App.css';
 import AboutMe from './components/AboutMe';
 import Banner from './components/Banner';
 import Projects from './components/Projects';
+import Tech from './components/Tech';
 import {
   BrowserRouter,
   Switch,
@@ -15,8 +16,8 @@ function App() {
       <div className="nav d-flex justify-content-between align-items-center">
         <Link className="text-decoration-none wF ms-3" to="/"><img src={"images/home.png"} alt="" /></Link>
         <div className="myLinks">
-          <a className="me-1" href="https://github.com/alsanta/"><img src={"/images/git.png"} alt="Git Hub image" /></a>
-          <a href="https://www.linkedin.com/in/alsanta/"><img src={"/images/linkedin.png"} alt="Linkedin image" /></a>
+          <a className="me-1" href="https://github.com/alsanta/"><img src={"/images/git.png"} alt="Git Hub" /></a>
+          <a href="https://www.linkedin.com/in/alsanta/"><img src={"/images/linkedin.png"} alt="Linkedin" /></a>
         </div>
         <Link className="text-decoration-none wF me-3"><img src={"/images/email.png"} alt="" /></Link>
       </div>
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route exact path="/me">
           <AboutMe></AboutMe>
+        </Route>
+        <Route exact path="/tech">
+          <Tech></Tech>
         </Route>
       </Switch>
     </BrowserRouter>

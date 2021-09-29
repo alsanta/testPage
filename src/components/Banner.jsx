@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -17,7 +17,7 @@ const Banner = () => {
                     <img className="linkPic" src={'/images/me.jpg'} alt="About me" />
                     <h1 className="linkText ">About Me</h1>
                 </Link>
-                <Link to="/" className="links">
+                <Link to="/tech" className="links">
                     <img className="linkPic" src={'/images/resume.jpg'} alt="Tech" />
                     <h1 className="linkText ">Tech</h1>
                 </Link>
