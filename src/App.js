@@ -3,6 +3,7 @@ import AboutMe from './components/AboutMe';
 import Banner from './components/Banner';
 import Projects from './components/Projects';
 import Tech from './components/Tech';
+import ContactMe from './components/ContactMe';
 import {
   BrowserRouter,
   Switch,
@@ -19,7 +20,7 @@ function App() {
           <a className="me-1" href="https://github.com/alsanta/"><img src={"/images/git.png"} alt="Git Hub" /></a>
           <a href="https://www.linkedin.com/in/alsanta/"><img src={"/images/linkedin.png"} alt="Linkedin" /></a>
         </div>
-        <Link className="text-decoration-none wF me-3"><img src={"/images/email.png"} alt="" /></Link>
+        <Link className="text-decoration-none wF me-3" to="/email"><img src={"/images/email.png"} alt="" /></Link>
       </div>
       <Route exact path="/">
         <Banner></Banner>
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/tech">
           <Tech></Tech>
+        </Route>
+        <Route exact path="/email">
+          <ContactMe></ContactMe>
         </Route>
       </Switch>
     </BrowserRouter>

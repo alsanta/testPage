@@ -36,14 +36,6 @@
   display: flex;
   border: 1px black solid;
 }
-.linkPic{
-  opacity: 1.0;
-  width: 100%;
-}
-.linkPic:hover {
-  opacity: .3;
-  transition: .55s ease-in-out;
-}
 .linkText{
 position: absolute;
 top: 50%;
@@ -104,4 +96,14 @@ text-decoration: none;
 }
 .walnutBg{
   background-color: #773f1a;
+}
+.subBtn{
+  width: 100px;
+  margin: 0 auto;
+}
+
+
+.emailBox{
+  width: 600px;
+  margin: 0 auto;
 }

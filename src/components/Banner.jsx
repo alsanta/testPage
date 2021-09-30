@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div>
             <div className="empty App">
-                <h1>Welcome</h1>
+                <h1>Alexandre Santana</h1>
             </div>
             <div className="hero">
                 <Link to="/projects" className="links">
