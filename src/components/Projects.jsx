@@ -7,13 +7,37 @@ const Projects = () => {
         <div className="App">
             <h1>Projects</h1>
             {
-                allProjects.map((item,idx)=>{
-                    return <div key={idx} className="projectCustom">
+                allProjects.map((item, idx) => {
+                    return <div key={idx} className="projectCustom charGreyBg wF">
                         <div className="projectInfo">
-                            <p>{item.title}</p>
+                            <h3>{item.title}</h3>
                             <p>{item.description}</p>
-                            <img src={item.img} alt="" />
-                            <a className="text-decoration-none btn btn-primary" href="http://google.com">{item.title}</a>
+                            <div className="d-flex justify-content-center gap-2 mb-3">
+                                {
+                                    item.img?
+                                    <img src={item.img} alt="First" />
+                                    :""
+                                }
+                                {
+                                    item.img2?
+                                    <img src={item.img2} alt="Second" />
+                                    :""
+                                    
+                                }
+                                {
+                                    item.img3?
+                                    <img src={item.img3} alt="Second" />
+                                    :""
+                                    
+                                }
+                                {
+                                    item.img4?
+                                    <img src={item.img4} alt="Second" />
+                                    :""
+                                    
+                                }
+                            </div>
+                            <a className="text-decoration-none btn btn-primary" href={item.link}>{item.title}</a>
                         </div>
                     </div>
                 })

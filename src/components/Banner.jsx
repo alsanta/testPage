@@ -18,7 +18,7 @@ const Banner = () => {
                     <h1 className="linkText ">About Me</h1>
                 </Link>
                 <Link to="/tech" className="links">
-                    <img className="linkPic" src={'/images/resume.jpg'} alt="Tech" />
+                    <img className="linkPic" src={'/images/tech.jpg'} alt="Tech" />
                     <h1 className="linkText ">Tech</h1>
                 </Link>
             </div>
